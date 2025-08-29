@@ -15,7 +15,7 @@ client = gspread.service_account_from_dict(eval(creds_json))
 sheet = client.open("TelegramBotDB").sheet1
 
 # Allowed users for messaging
-ALLOWED_USERS = [@1335352637]  # replace with Telegram user IDs
+ALLOWED_USERS = [1335352637]  # replace with Telegram user IDs
 
 # /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
